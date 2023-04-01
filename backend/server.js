@@ -5,14 +5,12 @@ const app = express();
 const cors = require("cors");
 const dotenv = require("dotenv");
 dotenv.config({ path: "./.env" });
-const serverless = require("serverless-http");
-const router = express.Router();
 
 app.use(cors());
 
 const PORT = 5000;
 mongoose.set("strictQuery", true);
-mongoose.connect("mongodb://localhost:27017/book", (err) => {
+mongoose.connect(process.env.REACT_APP_API_KEY, (err) => {
   if (!err) {
     console.log("Connected to database");
   } else {
@@ -140,8 +138,6 @@ app.delete("/api/user/:user_id", (req, res) => {
   });
 });
 
-app.use("/.netlify/functions/api", router);
-module.exports.handler = serverless(app);
-// app.listen(PORT, () => {
-//   console.log("Server listening on " + PORT);
-// });
+app.listen(PORT, () => {
+  console.log("Server listening on " + PORT);
+});

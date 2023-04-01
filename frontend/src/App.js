@@ -7,7 +7,7 @@ function App() {
   const [user, setUser] = useState([]);
   // get user
   const getData = async () => {
-    const url = `http://localhost:5000/api/user/`;
+    const url = `https://backend-inter.vercel.app/api/user/`;
     let data = await fetch(url);
     let parsedData = await data.json();
     setUser(parsedData.getuser);
@@ -20,7 +20,7 @@ function App() {
 
   //delete user
   const deleteUser = async (id) => {
-    const url = `http://localhost:5000/api/user/${id}`;
+    const url = `https://backend-inter.vercel.app/api/user/${id}`;
     const data = await fetch(url, {
       method: "DELETE",
       headers: {
@@ -37,6 +37,7 @@ function App() {
 
   return (
     <>
+      (
       <div className="con ">
         <div className="row">
           {user?.map((item, index) => {
@@ -57,6 +58,7 @@ function App() {
           })}
         </div>
       </div>
+      )
     </>
   );
 }

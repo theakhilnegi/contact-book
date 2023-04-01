@@ -13,7 +13,7 @@ const UpdateModal = (props) => {
     //update user
     const updateUser = async () => {
         //API call
-        const response = await fetch(`http://localhost:5000/api/user/${props.id}`, {
+        const response = await fetch(`https://backend-inter.vercel.app/api/user/${props.id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
