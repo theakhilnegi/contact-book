@@ -1,0 +1,110 @@
+.modal-heading {
+    margin: 0;
+    color: rgba(0, 0, 0, .85);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: inline;
+    padding-top: 7px;
+}
+
+.modal-content {
+    max-width: 500px;
+    margin: auto;
+}
+
+.modal-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-label {
+    display: inline;
+}
+
+.form-control {
+    width: 66.6%;
+    display: inline;
+    height: 32px;
+    padding: 4px 11px;
+    color: rgba(0, 0, 0, .65);
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+.modal-list {
+    text-align: end;
+    margin-bottom: 24px;
+}
+
+.modal-button-1 {
+    line-height: 1.499;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .015);
+    cursor: pointer;
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    height: 32px;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, .65);
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+}
+
+.modal-button-1:hover {
+    background: #fff;
+    color: #2595fd;
+}
+
+.modal-button-2 {
+    color: #fff;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .045);
+    line-height: 1.499;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    cursor: pointer;
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    height: 32px;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.modal-button-2:hover {
+    background: #3fa0fa;
+    color: #fff;
+}
+
+.list-group.modal-list-ul {
+    padding: 24px;
+}
